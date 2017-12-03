@@ -9,24 +9,22 @@ public class Al implements Washing_Types{
     @Override
     public void Process(DishWasher_DataFormat dish) {
 
-        if(dish.getMaretial_type().equals("small")){
+
+        if(dish.getSize().equals("small")){
             context = new Context(new setminTemp());
             temp = context.executeStrategy(dish.getMin_temperature(),dish.getMax_temperature());
         }
-        if(dish.getMaretial_type().equals("medium")){
+        if(dish.getSize().equals("medium")){
             context = new Context(new setmidTemp());
             temp = context.executeStrategy(dish.getMin_temperature(),dish.getMax_temperature());
         }
-        if(dish.getMaretial_type().equals("large")){
+        if(dish.getSize().equals("large")){
             Context context = new Context(new setmaxtemp());
             temp = context.executeStrategy(dish.getMin_temperature(),dish.getMax_temperature());
         }
 
 
-
-
-
-        System.out.println("Washing Al - > "+dish.getItem_name()+ (dish.getMax_temperature())/2);
+        System.out.println("Washing Al - > "+dish.getItem_name()+ " at  "+temp);
 
 
     }

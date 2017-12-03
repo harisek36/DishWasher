@@ -10,6 +10,7 @@ public class Context {
     }
 
     public int executeStrategy(int min,int max){
+
         return strategy.setTemp(min,max);
     }
 }

@@ -5,7 +5,7 @@ public class setmaxtemp implements Strategy{
     @Override
     public int setTemp(int min,int max) {
 
-        System.out.println("Setting Max Temp...");
+
         return max;
     }
 }

@@ -4,6 +4,7 @@
 public class setminTemp implements Strategy{
     @Override
     public int setTemp(int min,int max) {
+
         return min;
     }
 }
