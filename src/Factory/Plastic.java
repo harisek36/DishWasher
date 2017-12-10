@@ -8,11 +8,26 @@ import Strategy.setminTemp;
 /**
  * Created by harishsekar on 12/1/17.
  */
-public class Plastic implements Washing_Types {
+public class Plastic extends Template_.setupTemplate implements Washing_Types {
 
 
 
     int temp;
+
+    @Override
+    public void initialize() {
+        System.out.println(" Initialize Water for plastic material");
+
+
+    }
+
+    @Override
+    public void end() {
+
+        System.out.println(" Draining Water for  after plastic process");
+
+
+    }
 
     Context context;
     @Override

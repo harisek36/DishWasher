@@ -8,10 +8,25 @@ import Strategy.setminTemp;
 /**
  * Created by harishsekar on 12/1/17.
  */
-public class Glass implements Washing_Types{
+public class Glass extends Template_.setupTemplate implements Washing_Types{
 
 
     int temp;
+
+    @Override
+    public void initialize() {
+        System.out.println(" Initialize Water for glass material");
+
+
+    }
+
+    @Override
+    public void end() {
+
+        System.out.println(" Draining Water for  after glass process");
+
+
+    }
 
     Context context;
     @Override

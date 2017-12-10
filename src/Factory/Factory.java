@@ -10,16 +10,16 @@ public class Factory {
         if(type == null){
             return null;
         }
-        if(type.equalsIgnoreCase("Factory.Al")){
+        if(type.equalsIgnoreCase("Al")){
             return new Al();
 
-        } else if(type.equalsIgnoreCase("Factory.Metal")){
+        } else if(type.equalsIgnoreCase("Metal")){
             return new Metal();
 
-        } else if(type.equalsIgnoreCase("Factory.Glass")){
+        } else if(type.equalsIgnoreCase("Glass")){
             return new Glass();
 
-        }else if(type.equalsIgnoreCase("Factory.Plastic")){
+        }else if(type.equalsIgnoreCase("Plastic")){
             return new Plastic();
         }
 
